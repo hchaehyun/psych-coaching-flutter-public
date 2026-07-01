@@ -8,8 +8,8 @@
 - Google 로그인 기반 인증 흐름과 사용자 세션 관리
 - 사용자 프로필, 기기 단위 로그인 상태, 온보딩 상태 관리
 - 감정/수면 기반 셀프트래킹 기록과 캘린더 중심 조회
-- 저널 작성, 이미지 선택/업로드, 기록 상세 화면
-- 알림 목록, 읽음 상태, 푸시 알림 권한 흐름
+- 저널 작성, 이미지 선택/업로드, 기록 카드 조회/수정/삭제
+- 알림 목록, 읽음 상태, 알림 수신 동의/설정 흐름
 - 약관, 개인정보 처리방침, 계정 관리, 로그아웃/탈퇴 화면
 - 공통 네트워크 클라이언트, 에러 처리, 테마, 라우팅 구조
 
@@ -22,7 +22,6 @@
 - Google Sign-In
 - SharedPreferences, Flutter Secure Storage
 - Image Picker, Permission Handler, Device Info Plus
-- Flutter Local Notifications, Timezone
 - Build Runner, JSON Serializable
 
 ## Architecture
@@ -34,7 +33,7 @@ lib/
 │   ├── constants/      # 앱 공통 상수
 │   ├── network/        # Dio 클라이언트와 API 응답 처리
 │   ├── router/         # GoRouter 라우트 정의
-│   ├── services/       # Firebase, 알림, 기기 관련 서비스
+│   ├── services/       # 기기 ID와 보조 앱 서비스
 │   ├── theme/          # 앱 테마
 │   └── widgets/        # 공통 UI 위젯
 │
